@@ -1,0 +1,11 @@
+version : "0.1"
+services:
+  library:
+    image: oushanskeen/library
+  counter:
+    image: oushanskeen/counter
+    ports:
+    - "81:3031"
+    - "82:3032"
+    environment:
+      PORT: 3000
