@@ -1,0 +1,18 @@
+const getBooks = ({booksRepository}) =>
+  booksRepository.readAll();
+const getBook = ({bookId,booksRepository}) =>
+  booksRepository.readOne(bookId);
+const postBook = ({bookData,booksRepository}) =>
+  booksRepository.post(bookData);
+const putBook = ({bookData,booksRepository}) =>
+  booksRepository.post(bookData);
+const deleteBook = ({bookId,booksRepository} =>
+  booksRepository.delete(bookId);
+
+module.exports = {
+  getBooks,
+  getBook,
+  postBook,
+  putBook,
+  deleteBook
+};
